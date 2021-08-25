@@ -1,0 +1,101 @@
+body {
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 15px;
+    line-height: 1.6;
+    color: #5E6282;
+}
+
+*,
+*:before
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+/*Container*/
+.container  {
+    width: 100%;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+/*header*/
+.header {
+    width: 100%;
+    padding-top: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.headerInner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*headerlogo*/
+.headerlogo {
+    width: 116px;
+    height: 35px;
+    top: auto;
+    left: auto;
+    background: url(../images/svg/logo.svg)
+}
+
+/* intro */
+.intro {
+    position: relative;
+    width: 765px;
+    height: 764px;
+    left: 565px;
+    top: 105px;
+    background: url(../images/Traveller1.png)
+}
+
+/*Навигация*/
+.nav {
+    font-size: 18px;
+
+}
+
+/*Стиль шрифта меню*/
+.navLink {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 32px;
+    color: #5E6282;
+    text-decoration: none;
+
+    transition: color .2 linear;
+}
+
+.navLink:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    display: none;
+
+    background-color: #5E6282;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+}
+
+
+.navLink:hover {
+    color: #DF6951;
+}
+
+.navLink:hover:after {
+    display: block;
+}
