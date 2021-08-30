@@ -125,7 +125,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /*Слайдер*/
 .head-slider {
-    position: absolute;
     height: 764px;
     width: 1160px;
     padding-top: 30px;
@@ -149,6 +148,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #DF6951;
 }
 
+/*Основной текст*/
 .text-slider-second {
     position: absolute;
     width: 545px;
@@ -162,6 +162,7 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 900;
 }
 
+/*Дескрипшен*/
 .text-slider-third {
     position: absolute;
     width: 477px;
@@ -175,8 +176,22 @@ h1, h2, h3, h4, h5, h6 {
     color: #5E6282;
 }
 
+/*Пара кнопок слайдера*/
+
+/*Выравнивание*/
+.wrapper {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    max-width: 700px
+    
+}
+
+/*Основная кнопка слайдера*/
 .slider-button {
-    background-color: #F1A501; /* Green */
+    background-color: #F1A501; 
     border: none;
     color: white;
     padding: 15px 32px;
@@ -190,4 +205,106 @@ h1, h2, h3, h4, h5, h6 {
 
 .slider-button:hover {
     box-shadow: 0 12px 16px 0 rgba(241, 165, 1, 0.15), 0 17px 50px 0 rgba(241, 165, 1, 0.15)
+}
 
+/* Кнопка со стрелкой */
+/* .round-arrow {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;   
+} */
+
+/*Круг*/
+.round {
+    width: 52px; 
+    height: 52px;
+    background-color: #DF6951;
+    padding: 0 0 4;
+    margin-left: 44px;
+    border-radius: 50%;
+    box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
+}
+
+
+.headline {
+    position: relative;
+    top: 105px;
+}
+
+.sub-text {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    color: #5E6282;
+}
+
+.main-text {
+    font-family: Volkhov;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+
+.benefits {
+    position: relative;
+    top: 60px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    align-content: flex-start;
+    
+}
+
+.benefit-item {
+    position: relative;
+    top: 105px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    flex-direction: column;
+    align-content: flex-start;
+    /* padding-left: 12px;
+    padding-right: 12px; */
+}
+
+.benefit-icon {
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+.benefit-headline{
+    position: relative;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: #1E1D4C;
+    padding-bottom: 20px;
+}
+
+.benefit-text {
+    position: relative;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: #5E6282;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    align-items: stretch
+}
